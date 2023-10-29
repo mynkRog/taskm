@@ -1,0 +1,14 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<form class="form2" action="/signup" method="post">
+    <h1>✍ Sign-Up to proceed</h1>
+    <input type="text" placeholder="  Enter your name" name="username" required>
+    <input type="password" placeholder="  Enter Password" name="password" required>
+    <h2>Enter Your task details below...</h2>
+    <input type="text" placeholder="  Enter title" name="title" required>
+    <input type="text" placeholder="  Enter note" name="description" required>
+    <input type="date" name="due" required>
+    <p style="color: white;">Already have an account? <a style="color: #fab700;" href="/signin">Sign In</a></p>
+    <button>Sign Up</button>
+</form>
+<%- include("partials/footer")%>

@@ -1,0 +1,12 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<form class="form3" action="/update/<%= user._id %>" method="post">
+    <h1 style="color: #212121;">🔨 Edit Task</h1>
+    <input type="text" value="<%= user.title %>" name="title">
+    <input type="text" value="<%= user.description %>" name="description">
+    <input type="date" value="<%= user.due %>" name="due">
+    <button style="background-color: white; color: black;">Update</button>
+     <p style="color:#212121;">Get back to Profile Page.<a href="/profile">&nbsp; Profile Page</a></p>
+  </form>
+</div>
+<%- include("partials/footer")%>

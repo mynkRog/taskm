@@ -1,0 +1,12 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<form class="form3" action="/newtask" method="post">
+    <h1 style="color: #212121;">🔗Add new task</h1>
+    <input type="text" placeholder="  Enter your name" name="username" required>
+    <input type="text" placeholder="  Enter title" name="title" required>
+    <input type="text" placeholder="  Enter note" name="description" required>
+    <input type="date" name="due" required>
+    <p style="color:#212121;">Back to profile page? <a href="/profile">Profile page</a></p>
+    <button style="background-color: white; color: black; width: 16%;">Add task</button>
+</form>
+<%- include("partials/footer")%>

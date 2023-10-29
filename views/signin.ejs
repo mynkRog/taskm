@@ -1,0 +1,10 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<form class="form1" action="/signin" method="post">
+    <h1 style="color: #212121;">🔓 Sign-In to proceed</h1>
+    <input type="text" placeholder="  johndoe" name="username" required>
+    <input type="password" placeholder="  ******" name="password" required>
+    <p style="color:#212121;">Dont have an account?<a href="/signup">&nbsp; Sign Up</a></p>
+    <button style="background-color: white; color: black;">Sign In</button>
+</form>
+<%- include("partials/footer")%>
